@@ -10,6 +10,4 @@ This repository tracks my daily learning progress, code snippets, exercises, and
 
 ```text
 ├── 01_basics/            # Variables, data types, loops, and conditionals
-├── 02_data_structures/    # Lists, dictionaries, tuples, and sets
-├── 03_mini_projects/     # Automation scripts and small applications
 └── README.md             # Overview of the repository

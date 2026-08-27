@@ -1,17 +1,22 @@
+print("Today i want to print my list one after another. Using for ")
 company = ["LG", "Arçelik", "Vestel", "Beko", "Siemens"]
-for one in company:
-    print(one)
-print("This one isn't sorted yet. Now, I will sort the list and write them back 2 back.")
+for a in company:
+    print(a)
+print("This list isn't sorted yet. Now, I will sort the list and print them one after another.")
 company.sort()
-for sorted in company:
-    print(sorted)
-print("Now I want to give numbers to my list. Thats how I enumarate my list.")
+for b in company:
+    print(b)
+print("Now I want to number my list. That's how I enumarate my list.")
 print(list(enumerate(company,1)))
-print("These ,1 works for giving numbers starting from 1. We can start at the -999")
+print("This ',1' parameter is used to start numbering from 1. We can even start at -999")
 print(list(enumerate(company,-999)))
-print("What we do we want to print our list in one string? That's how it's working")
+print("What if we want to print our list as a single string? That's how it works")
 stringcompany = ", ".join(company)
 print(stringcompany)
 print("We also can put '-' between the elements.")
 stringcompany = "-".join(company)
 print(stringcompany)
+print("Lets split again our list.")
+company2 = stringcompany.split("-")
+print(company2)
+print("You can see how elements are converted back into a list. We use 'split' for this.")

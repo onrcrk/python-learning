@@ -35,3 +35,13 @@ print("Şimdi de sözlüğümüzdeki anahtar ve değerleri tekli bir arada yazd�
 for k,l in b.items():
     print(k,":",l)
 print("'items' komutu bize sözlüğümüzdeki anahtar ve değerleri ikili olarak verir.\nBu sayede 'for' döngüsü ile ikili gruplar halinde değerlerimizi tek tek yazdırabiliriz.")
+
+print("Sözlüğümüzde olan veya olmayan bir anahtarı çekmek istediğimizde şöyle yapıyoruz:")
+print(b.get("model"))
+print("'model' anahtarını getirdim ve olduğu için değerini verdi. Olmayan bir anahtar için yapsaydım?")
+print(b.get("renk"))
+print("Gördüğünüz üzere 'None' dedi. Çünkü öyle bir anahtarımız yok.")
+
+print("Bir anahtar bulunamadığında yazdırmasını istediğim mesajı virgül koyup yazarsam bana o mesajı yazdırır.")
+print(b.get("renk","Ne yazık ki böyle bir anahtar yok."))
+print("'renk' anahtarını aradım. Olmadığı için istediğim mesajı bana yazdırdı.")

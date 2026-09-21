@@ -64,3 +64,24 @@ while i <= sayi:
     faktoriyel *= i
     i += 1
 print(f"Bu döngü sayesinde {sayi}! = {faktoriyel}'i bulduk.")
+
+# asal sayı kontrolcüsü
+
+sayi = int(input("Kontrol etmek istediğiniz sayıyı giriniz: "))
+prime = True
+for i in range(2,sayi):
+    if sayi % i == 0:
+        print("Sayı asal değil.")
+        break
+    else:
+        print("Sayı asal.")
+        break
+
+# pozitif bölen sayısı bulma
+
+sayi = int(input("Kontrol etmek istediğiniz sayıyı giriniz: "))
+pozitif_bolen = 0
+for i in range(1,sayi+1):
+    if sayi % i == 0:
+        pozitif_bolen += 1
+print(f"Pozitif bölen sayısı: {pozitif_bolen}")

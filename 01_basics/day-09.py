@@ -38,11 +38,29 @@ print("'x' değeri 1'di. Döngü 10 olana kadar devam etti. En son", x,"olunca d
 x = 0
 while True:
     if x == 53:
-            break
+        break
     if x % 2 == 0:
         x += 1
         continue
     print(x)
     x += 1
-print("Sonsuz bir döngü oluşturduk. 'i' 2'ye tam bölünüyorsa 1 ekleyip devam et, bölünmüyorsa yazdırıp 1 ekle dedik.\n54'e eşit olduğunda da döngüyü durdurmasını istedik.")
-print("Döngüyü durdurmak istediğimiz sayı")
+print("Sonsuz bir döngü oluşturduk. 'x' 2'ye tam bölünüyorsa 1 ekleyip döngüye devam etmesini, eğer bölünmüyorsa yazdırdıktan sonra 1 ekleyip başa döndük.\n'x' 53'e ulaştığında da döngünün sona ermesini sağladık.")
+
+# input fonksiyonu
+
+sayi = int(input("Bir sayı giriniz: "))
+faktoriyel = 1
+for i in range(1, sayi + 1):
+    faktoriyel *= i
+    print(faktoriyel)
+print(f"{sayi}! = {faktoriyel}")
+print(f"'faktoriyel' (1) değişkenini 1'den {sayi}'ya kadar olan tüm sayılarla çarptık. Bu da bize {sayi}'nın faktöriyelini verdi.")
+
+print("Bunu 'while' döngüsü ile de yapabiliriz.")
+sayi = int(input("Tekrar sayı giriniz: "))
+faktoriyel = 1
+i = 1
+while i <= sayi:
+    faktoriyel *= i
+    i += 1
+print(f"Bu döngü sayesinde {sayi}! = {faktoriyel}'i bulduk.")

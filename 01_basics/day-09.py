@@ -79,9 +79,25 @@ for i in range(2,sayi):
 
 # pozitif bölen sayısı bulma
 
-sayi = int(input("Kontrol etmek istediğiniz sayıyı giriniz: "))
+sayi = int(input("Pozitif bölen sayısını bulmak istediğiniz sayıyı giriniz: "))
 pozitif_bolen = 0
 for i in range(1,sayi+1):
     if sayi % i == 0:
         pozitif_bolen += 1
 print(f"Pozitif bölen sayısı: {pozitif_bolen}")
+
+# ekrandan okunan sayının rakamları toplamı
+
+sayi = input("Rakamlar toplamını bulmak istediğiniz sayıyı giriniz: ")
+rakam_toplami = 0
+for i in sayi:
+    rakam_toplami += int(i)
+print(f"Rakamlar toplamı: {rakam_toplami}")
+
+# 5 tane sayının en büyük ve en küçüğünü yazdırma
+
+liste = []
+for i in range(5):
+    sayi = int(input("Karşılaştırmak istediğiniz sayıları giriniz: "))
+    liste.append(sayi)
+print(f"En büyük sayı {max(liste)}, en küçük sayı {min(liste)}.")

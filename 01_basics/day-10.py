@@ -12,3 +12,15 @@ for harf in metin:
 
 for harf,adet in sozluk.items():
     print(f"Harf: {harf}, Adet: {adet}")
+
+# metindeki A harflerini büyük yapan mini proje
+
+metin = input("Bir metin giriniz: ")
+metin2 = ""
+for harf in metin:
+    if harf == "a":
+        metin2 += "A"
+    else:
+        metin2 += harf
+    
+print(metin2)

@@ -44,7 +44,9 @@ for kisi in bolum:
     if kisi in ayin_elemanlari:
         eslesme = True
         break
+print("'for' döngüsü ile ayın elemanı var mı yok mu kontrol ettik. Varsa 'eslesme' değişkenini True yapacak.")
 if eslesme:
     print("Aramızda ayın elemanı var. Tebrikler!")
 else:
     print("Kimse ayın elemanı olamamış.")
+print("'for' döngüsü 'eslesme' değişkenini True yaptığı için if döngüsü çalıştı. Eşleşme olmasaydı 'else' bloğu çalışacaktı.")

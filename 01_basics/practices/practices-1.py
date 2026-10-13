@@ -22,3 +22,7 @@ for prime in prime_list:
 print("İlk 10 bin asal sayıdan 3 ile başlayıp 7 ile bitenler:")
 for i in liste:
     print(i)
+
+
+
+        
